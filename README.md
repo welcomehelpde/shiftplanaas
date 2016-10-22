@@ -1,12 +1,11 @@
 # Shiftplanaas
 
 ## Idea
-as simple as doodle at it's simplest
-different from doodle: for shifts goal is to spread evenly, not to agree on one date + time
-a bit like creating a meeting in a apple calendar, or outlook
-
-no login
-no personal data
+* As simple as doodle at it's simplest.
+* Different from doodle: for shifts goal is to spread evenly, not to agree on one date + time.
+* A bit like creating a meeting in a apple calendar, or outlook; very calendar centric
+* no login
+* no personal data
 
 ## Workflow / Lifecycle
 
@@ -21,11 +20,16 @@ no personal data
 
 ## interface frontend / backend
 
-POST /api/events/ - create event - returns {id: 'abc-123'}
-GET /api/events/abc-123 - get event
-PUT /api/events/abc-123 - update event
-DELETE /api/events/abc-123 - delete event
+    POST /api/events/ - create event - returns {id: 'abc-123'}
+    GET /api/events/abc-123 - get event
+    PUT /api/events/abc-123 - update event
+    DELETE /api/events/abc-123 - delete event
 
-data structure of an event: https://github.com/welcomehelpde/shiftplanaas/blob/master/db/event_1.json
+Data structure of an event: https://github.com/welcomehelpde/shiftplanaas/blob/master/db/event_1.json
 
-First implemented data storage is MySQL, some document store will be added
+Storage: First implemented is MySQL, some document store will be added
+
+## Frameworks
+
+* fullcalendar for frontend
+* lumen for backend
