@@ -1,3 +1,5 @@
+use shiftplanaas;
+
 create table event (
 event_id int(30) unsigned PRIMARY KEY  AUTO_INCREMENT, 
 name varchar(120) NOT NULL,
@@ -25,7 +27,7 @@ participants_max int(10) unsigned,
 remark varchar(200)
 );
 
-create table start_end (
+create table shift_start_end (
 shift_id int(30) unsigned NOT NULL,
 start_time datetime,
 end_time datetime
