@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shiftplanaas</title>
+  <meta name="description" content="">
+
+  <style>
+    .loading {
+      height: 100vh;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 32px;
+    }
+  </style>
+</head>
+<body ui-view>
+  <div class="loading">
+    <p>Lädt&hellip;</p>
+
+    <noscript>
+      <p>Entschuldigung. JavaScript wird benötigt.</p>
+    </noscript>
+  </div>
+</body>
+</html>

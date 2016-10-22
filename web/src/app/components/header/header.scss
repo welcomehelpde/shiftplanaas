@@ -1,0 +1,9 @@
+@import "../../../../node_modules/bootstrap/scss/variables";
+@import "../../../../node_modules/bootstrap/scss/mixins";
+
+.component-header {
+  @media (min-width: 768px) {
+    @include make-container();
+    @include make-container-max-widths();
+  }
+}
