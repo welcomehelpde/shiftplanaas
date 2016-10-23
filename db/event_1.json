@@ -20,7 +20,7 @@
          "participants_min" : 1,
          "shifts" : [
             {
-               "remark" : "Um 19 Uhr sollte das Auto da sein, Heinz 0101 101010101",
+               "description" : "Um 19 Uhr sollte das Auto da sein, Heinz 0101 101010101",
                "comments" : [
                   {
                      "date" : "2016-10-05T20:34:30+01:00",
@@ -54,7 +54,7 @@
          "tasks" : "Glühwein verkaufen",
          "participants_min" : 2,
          "participants_max" : 4,
-         "remark" : "Sueffelt nicht zu viel",
+         "description" : "Sueffelt nicht zu viel",
          "shifts" : [
             {
                "participants_no" : [
@@ -80,12 +80,12 @@
                "last_changed" : "2016-10-04T23:56:30+01:00",
                "created" : "2016-10-04T23:34:30+01:00",
                "end" : "2016.10.22T24:00Z",
-               "remark" : "muss evtl. wegen Raum abgesagt werden"
+               "description" : "muss evtl. wegen Raum abgesagt werden"
             }
          ]
       }
    ],
-   "url_participants" : "testurl",
+   "url_token_participants" : "testurltoken",
    "place" : "Goethestraße 53",
-   "url_admin" : "testurl_admin"
+   "url_token_admin" : "testurltoken_admin"
 }

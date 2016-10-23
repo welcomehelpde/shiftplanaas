@@ -26,14 +26,14 @@ event_id int(30) unsigned NOT NULL,
 tasks varchar(300),
 participants_min int(10) unsigned,
 participants_max int(10) unsigned,
-remark varchar(200),
+description varchar(200),
 place varchar(120)
 ) ;
 
 create table shift (
 shift_id int(30) unsigned PRIMARY KEY  AUTO_INCREMENT,
 shift_series_id int(30) unsigned NOT NULL,
-remark varchar(200),
+description varchar(200),
 place varchar(120),
 start_time datetime,
 end_time datetime,
