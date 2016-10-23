@@ -4,6 +4,7 @@ const App = angular.module(
   'shiftplanaas', [
     // plugins
     require('angular-ui-router'),
+    'ui.calendar',
 
     // core
     require('./core/core.module').name,
@@ -15,7 +16,8 @@ const App = angular.module(
     require('./index.routes').name,
 
     // pages
-    require('./pages/start/start.module').name
+    require('./pages/start/start.module').name,
+    require('./pages/event/event.module').name
   ]
 );
 

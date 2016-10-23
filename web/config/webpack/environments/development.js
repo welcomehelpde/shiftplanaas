@@ -12,6 +12,12 @@ module.exports = function(_path) {
       hot: false,
       inline: true,
       historyApiFallback: true
-    }
+    },
+    plugins: [
+      new webpack.ProvidePlugin({
+        'window.jQuery': 'jquery',
+        'window.moment': 'moment'
+      })
+    ]
   };
 };

@@ -1,0 +1,37 @@
+<app-header></app-header>
+
+<main class="page-event container">
+  <form>
+    <h1>Event erstellen</h1>
+
+    <div class="form-inline">
+      <div class="form-group">
+        <label for="event-name">Name</label>
+        <input
+          class="form-control"
+          type="text"
+          id="event-name"
+          placeholder="Wie soll das Event heißen?">
+      </div>
+
+      <div class="form-group">
+        <label for="event-description">Beschreibung</label>
+        <textarea
+          class="form-control"
+          id="event-description"
+          placeholder="Worum geht es bei dem Event?"></textarea>
+      </div>
+    </div>
+
+    <hr>
+
+    <h2>Schichten</h2>
+
+    <div
+      calendar="shiftsCalendar"
+      ui-calendar="eventCtrl.calendarConfig"
+      ng-model="eventCtrl.shiftSources">
+    </div>
+
+  </form>
+</main>
