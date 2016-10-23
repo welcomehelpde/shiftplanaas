@@ -1,0 +1,79 @@
+{
+   "description" : "Sample event for Shiftplanaas",
+   "url_participants": "testurl",
+   "url_admin": "testurl_admin",
+   "comments" : [
+      {
+         "date" : "2016-10-05T20:34:30+01:00",
+         "text" : "Soll ich was mitbringen?",
+         "name" : "Suny"
+      },
+      {
+         "text" : "@Suny: Nein, aber zieh Dir was Ordentliches an.",
+         "name" : "Anna",
+         "date" : "2016-10-06T20:34:30+01:00"
+      }
+   ],
+   "shifts_series" : [
+      {
+         "remark" : "Um 19 Uhr sollte das Auto da sein, Heinz 0163 422235412",
+         "participants_min" : 1,
+         "place" : "Vor dem Hbf",
+         "tasks" : "Aufbau",
+         "shifts" : [
+            {
+               "end" : "2016.10.15T20:00Z",
+               "last_changed" : "2016-10-04T23:56:30+01:00",
+               "participants_maybe" : [
+                  "Anna"
+               ],
+               "participants_yes" : [
+                  "Stefan",
+                  "Peter"
+               ],
+               "participants_no" : [
+                  "Heinz"
+               ],
+               "created" : "2016-10-04T23:34:30+01:00",
+               "begin" : "2016.10.15T19:00Z"
+            }
+         ]
+      },
+      {
+         "remark" : "Sueffelt nicht zu viel",
+         "participants_min" : 2,
+         "participants_max" : 4,
+         "shifts" : [
+            {
+               "place" : "HaTho-Strasse",
+               "last_changed" : "2016-10-04T23:56:30+01:00",
+               "end" : "2016.10.15T24:00Z",
+               "begin" : "2016.10.15T20:00Z",
+               "created" : "2016-10-04T23:34:30+01:00",
+               "participants_yes" : [
+                  "Anna",
+                  "Suny",
+                  "Heinz"
+               ],
+               "participants_no" : [
+                  "Peter"
+               ]
+            },
+            {
+               "place" : "Phillippus KiTa",
+               "remark" : "muss evtl. wegen Raum abgesagt werden",
+               "last_changed" : "2016-10-04T23:56:30+01:00",
+               "end" : "2016.10.22T24:00Z",
+               "begin" : "2016.10.22T20:00Z",
+               "participants_yes" : [
+                  "Anna"
+               ],
+               "created" : "2016-10-04T23:34:30+01:00"
+            }
+         ],
+         "tasks" : "Glühwein verkaufen"
+      }
+   ],
+   "place" : "Goethestraße 53",
+   "name" : "Lange Nacht der Museen, MFR 2016"
+}
