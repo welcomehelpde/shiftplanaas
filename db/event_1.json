@@ -1,5 +1,7 @@
 {
    "description" : "Sample event for Shiftplanaas",
+   "url_participants": "testurl",
+   "url_admin": "testurl_admin",
    "comments" : [
       {
          "date" : "2016-10-05T20:34:30+01:00",
