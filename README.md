@@ -26,6 +26,8 @@
     DELETE /api/events/abc-123 - delete event
 
 Data structure of an event: https://github.com/welcomehelpde/shiftplanaas/blob/master/db/event_1.json
+The most general object is an *event*. It has a name, and consists of one to many:
+*shift series*. An shift series generally will be a one time thing and have length 1, e.g. "Sell tickets". Then, you  can think of it as a shift. But it may be a series, like "every Tuesday for the next 4 weeks". In this case, it consists of four *shift*. 
 
 Storage: First implemented is MySQL, some document store will be added
 
@@ -33,3 +35,11 @@ Storage: First implemented is MySQL, some document store will be added
 
 * fullcalendar for frontend
 * lumen for backend
+
+## Keep it Simple, Stupid
+
+* no archiving - just delete at some point
+* no future - at least not more than one year
+* no versioning - a changed event/shift series/shift overwrites, the old version is lost
+* no safeguard against lost urls - sorry.
+
