@@ -2,8 +2,8 @@ use shiftplanaas;
 
 create table event (event_id int(30) unsigned PRIMARY KEY  AUTO_INCREMENT, 
 name varchar(120) NOT NULL,
-url_participants varchar(512) UNIQUE,
-url_admin varchar(512) UNIQUE,
+url_token_participants varchar(512) UNIQUE,
+url_token_admin varchar(512) UNIQUE,
 description varchar(300), 
 place varchar(120)
 );
