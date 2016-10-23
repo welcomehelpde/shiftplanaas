@@ -1,91 +1,91 @@
 {
-   "description" : "Sample event for Shiftplanaas",
-   "url_participants": "testurl",
-   "url_admin": "testurl_admin",
    "comments" : [
       {
-         "date" : "2016-10-05T20:34:30+01:00",
          "text" : "Soll ich was mitbringen?",
+         "date" : "2016-10-05T20:34:30+01:00",
          "name" : "Suny"
       },
       {
          "text" : "@Suny: Nein, aber zieh Dir was Ordentliches an.",
-         "name" : "Anna",
-         "date" : "2016-10-06T20:34:30+01:00"
+         "date" : "2016-10-06T20:34:30+01:00",
+         "name" : "Anna"
       }
    ],
+   "description" : "Sample event for Shiftplanaas",
+   "name" : "Lange Nacht der Museen, MFR 2016",
    "shifts_series" : [
       {
-         "remark" : "Um 19 Uhr sollte das Auto da sein, Heinz 0101 101010101",
-         "participants_min" : 1,
          "place" : "Vor dem Hbf",
          "tasks" : "Aufbau",
+         "participants_min" : 1,
          "shifts" : [
             {
-               "end" : "2016.10.15T20:00Z",
-               "last_changed" : "2016-10-04T23:56:30+01:00",
-               "participants_maybe" : [
-                  "Anna"
+               "remark" : "Um 19 Uhr sollte das Auto da sein, Heinz 0101 101010101",
+               "comments" : [
+                  {
+                     "date" : "2016-10-05T20:34:30+01:00",
+                     "text" : "Wer hat den Schlüssel?",
+                     "name" : "Heinz"
+                  },
+                  {
+                     "text" : "Ich habe den Schlüssel",
+                     "date" : "2016-10-06T20:34:30+01:00",
+                     "name" : "Stefan"
+                  }
                ],
+               "end" : "2016.10.15T20:00Z",
+               "created" : "2016-10-04T23:34:30+01:00",
+               "begin" : "2016.10.15T19:00Z",
                "participants_yes" : [
                   "Stefan",
                   "Peter"
                ],
+               "participants_maybe" : [
+                  "Anna"
+               ],
+               "last_changed" : "2016-10-04T23:56:30+01:00",
                "participants_no" : [
                   "Heinz"
-               ],
-               "created" : "2016-10-04T23:34:30+01:00",
-               "begin" : "2016.10.15T19:00Z"
-   "comments" : [
-      {
-         "date" : "2016-10-05T20:34:30+01:00",
-         "text" : "Wer hat den Schlüssel?",
-         "name" : "Heinz"
-      },
-      {
-         "text" : "Ich habe den Schlüssel",
-         "name" : "Stefan",
-         "date" : "2016-10-06T20:34:30+01:00"
-      }
-   ],
+               ]
             }
          ]
       },
       {
-         "remark" : "Sueffelt nicht zu viel",
+         "tasks" : "Glühwein verkaufen",
          "participants_min" : 2,
          "participants_max" : 4,
+         "remark" : "Sueffelt nicht zu viel",
          "shifts" : [
             {
-               "place" : "HaTho-Strasse",
+               "participants_no" : [
+                  "Peter"
+               ],
                "last_changed" : "2016-10-04T23:56:30+01:00",
-               "end" : "2016.10.15T24:00Z",
-               "begin" : "2016.10.15T20:00Z",
-               "created" : "2016-10-04T23:34:30+01:00",
                "participants_yes" : [
                   "Anna",
                   "Suny",
                   "Heinz"
                ],
-               "participants_no" : [
-                  "Peter"
-               ]
+               "begin" : "2016.10.15T20:00Z",
+               "place" : "HaTho-Strasse",
+               "end" : "2016.10.15T24:00Z",
+               "created" : "2016-10-04T23:34:30+01:00"
             },
             {
-               "place" : "Phillippus KiTa",
-               "remark" : "muss evtl. wegen Raum abgesagt werden",
-               "last_changed" : "2016-10-04T23:56:30+01:00",
-               "end" : "2016.10.22T24:00Z",
                "begin" : "2016.10.22T20:00Z",
                "participants_yes" : [
                   "Anna"
                ],
-               "created" : "2016-10-04T23:34:30+01:00"
+               "place" : "Phillippus KiTa",
+               "last_changed" : "2016-10-04T23:56:30+01:00",
+               "created" : "2016-10-04T23:34:30+01:00",
+               "end" : "2016.10.22T24:00Z",
+               "remark" : "muss evtl. wegen Raum abgesagt werden"
             }
-         ],
-         "tasks" : "Glühwein verkaufen"
+         ]
       }
    ],
+   "url_participants" : "testurl",
    "place" : "Goethestraße 53",
-   "name" : "Lange Nacht der Museen, MFR 2016"
+   "url_admin" : "testurl_admin"
 }
