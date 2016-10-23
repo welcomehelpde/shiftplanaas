@@ -16,7 +16,7 @@
    ],
    "shifts_series" : [
       {
-         "remark" : "Um 19 Uhr sollte das Auto da sein, Heinz 0163 422235412",
+         "remark" : "Um 19 Uhr sollte das Auto da sein, Heinz 0101 101010101",
          "participants_min" : 1,
          "place" : "Vor dem Hbf",
          "tasks" : "Aufbau",
@@ -36,6 +36,18 @@
                ],
                "created" : "2016-10-04T23:34:30+01:00",
                "begin" : "2016.10.15T19:00Z"
+   "comments" : [
+      {
+         "date" : "2016-10-05T20:34:30+01:00",
+         "text" : "Wer hat den Schlüssel?",
+         "name" : "Heinz"
+      },
+      {
+         "text" : "Ich habe den Schlüssel",
+         "name" : "Stefan",
+         "date" : "2016-10-06T20:34:30+01:00"
+      }
+   ],
             }
          ]
       },

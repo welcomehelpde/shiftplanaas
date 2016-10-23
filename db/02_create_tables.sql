@@ -1,36 +1,44 @@
 use shiftplanaas;
 
-create table event (
-event_id int(30) unsigned PRIMARY KEY  AUTO_INCREMENT, 
+create table event (event_id int(30) unsigned PRIMARY KEY  AUTO_INCREMENT, 
 name varchar(120) NOT NULL,
-url varchar(512),
+url_participants varchar(512) UNIQUE,
+url_admin varchar(512) UNIQUE,
 description varchar(300), 
-place varchar(120),
-created datetime,
-last_changed datetime
+place varchar(120)
 );
 
-create table event_comments (
-comment_id int(30) unsigned PRIMARY KEY  AUTO_INCREMENT,
+create table event_comments (event_comment_id int(30) unsigned PRIMARY KEY  AUTO_INCREMENT,
 event_id int(30) unsigned NOT NULL, 
 name varchar(300),
 comment varchar(120),
-date datetime
-);
+date datetime);
 
-create table shift (
+create table shift_comments (shift_comment_id int(30) unsigned PRIMARY KEY AUTO_INCREMENT,
+shift_id int(30) unsigned NOT NULL, 
+name varchar(300),
+comment varchar(120),
+date datetime);
+
+create table shift_series (
+shift_series_id int(30) unsigned PRIMARY KEY  AUTO_INCREMENT,
 event_id int(30) unsigned NOT NULL,
-shift_id int(30) unsigned PRIMARY KEY  AUTO_INCREMENT,
-name varchar(100),
+tasks varchar(300),
 participants_min int(10) unsigned,
 participants_max int(10) unsigned,
-remark varchar(200)
-);
+remark varchar(200),
+place varchar(120)
+) ;
 
-create table shift_start_end (
-shift_id int(30) unsigned NOT NULL,
+create table shift (
+shift_id int(30) unsigned PRIMARY KEY  AUTO_INCREMENT,
+shift_series_id int(30) unsigned NOT NULL,
+remark varchar(200),
+place varchar(120),
 start_time datetime,
-end_time datetime
+end_time datetime,
+created datetime,
+last_change datetime
 );
 
 create table participants (
@@ -38,9 +46,8 @@ participant_id int(30) unsigned PRIMARY KEY  AUTO_INCREMENT,
 name varchar(300)
 );
 
-create table shift_participants ( 
-shift_id int(30) unsigned NOT NULL,
+create table shift_participants
+( shift_id int(30) unsigned NOT NULL,
 participant_id int(30) unsigned NOT NULL,
-answer  ENUM('yes', 'no', 'maybe') DEFAULT 'yes'
-);
+answer  ENUM('yes', 'no', 'maybe') DEFAULT 'yes');
 
