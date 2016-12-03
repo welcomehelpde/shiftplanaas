@@ -1,0 +1,63 @@
+{
+  "name": "shiftplanaas",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "",
+  "authors": [
+    "Stefan Dietz <dev@stefan-dietz.eu>"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --host 0.0.0.0",
+    "build": "cross-env NODE_ENV=production webpack -p --colors"
+  },
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-ui-calendar": "^1.0.2",
+    "angular-ui-router": "^0.3.1",
+    "assets-webpack-plugin": "^3.4.0",
+    "autoprefixer-core": "^6.0.1",
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-polyfill": "^6.16.0",
+    "babel-preset-angular": "^6.0.15",
+    "babel-preset-es2017": "^6.16.0",
+    "babel-runtime": "^6.11.6",
+    "baggage-loader": "^0.2.4",
+    "bootstrap": "^4.0.0-alpha.5",
+    "clean-webpack-plugin": "^0.1.12",
+    "cross-env": "^3.1.2",
+    "css-loader": "^0.25.0",
+    "es6-promise": "^4.0.5",
+    "eslint-loader": "~1.5.0",
+    "expose-loader": "^0.7.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "fullcalendar": "^3.0.1",
+    "html-loader": "^0.4.4",
+    "html-webpack-plugin": "^2.22.0",
+    "imagemin-pngquant": "^5.0.0",
+    "jquery": "^3.1.1",
+    "lodash": "~4.16.4",
+    "moment": "^2.15.1",
+    "ng-annotate-loader": "0.2.0",
+    "ngtemplate-loader": "^1.3.1",
+    "node-sass": "^3.10.1",
+    "postcss-loader": "^0.13.0",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "url": "^0.11.0",
+    "url-loader": "^0.5.7",
+    "web-app-manifest-loader": "^0.1.1",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "1.16.2"
+  },
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "devDependencies": {
+    "expose-loader": "^0.7.1"
+  }
+}

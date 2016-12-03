@@ -1,0 +1,143 @@
+<navbar></navbar>
+
+<main class="page-manage-organization container">
+  <h2>Organisation</h2>
+
+  <div class="form-inline">
+    <div class="form-group">
+      <label for="event-name">Wie heißt deine Organisation?</label>
+      <input
+        class="form-control"
+        type="text"
+        id="event-name"
+        placeholder="Lange Nacht der Museen 2016"
+      >
+    </div>
+
+    <div class="form-group">
+      <label for="event-description">Worum geht es in deiner Organisation?</label>
+      <textarea
+        class="form-control"
+        id="event-description"
+      ></textarea>
+    </div>
+  </div>
+
+  <hr>
+
+  <h2>Eventarten</h2>
+
+  <div
+    id="accordion"
+    role="tablist"
+    aria-multiselectable="true"
+  >
+    <div class="card">
+      <div class="card-header" role="tab">
+        <button
+          class="btn btn-link p-0"
+          aria-expanded="true"
+          aria-controls="collapseOne"
+        >
+          <h5 class="mb-0">
+            Glühwein verteilen
+          </h5>
+        </button>
+      </div>
+
+      <div
+        id="collapseOne"
+        class="collapse in"
+        role="tabpanel"
+        aria-labelledby="headingOne"
+      >
+        <div class="card-block">
+
+          <div class="form-inline">
+            <div class="form-group">
+              <label for="eventtype-name">Aufgabe</label>
+              <input
+                class="form-control"
+                type="text"
+                id="eventtype-name"
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="eventtype-shortname">Kurzname (max. 6 Zeichen)</label>
+              <input
+                class="form-control"
+                type="text"
+                id="eventtype-shortname"
+                maxlength="6"
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="eventtype-description">Beschreibung</label>
+              <textarea
+                class="form-control"
+                id="eventtype-description"
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="eventtype-location">Ort</label>
+              <input
+                class="form-control"
+                type="text"
+                id="eventtype-location"
+                maxlength="6"
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="eventtype-participants-min">Min. Teilnehmer</label>
+              <input
+                class="form-control"
+                type="number"
+                id="eventtype-participants-min"
+                maxlength="6"
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="eventtype-participants-max">Max. Teilnehmer</label>
+              <input
+                class="form-control"
+                type="number"
+                id="eventtype-participants-max"
+                maxlength="6"
+              >
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header" role="tab">
+        <button
+          class="btn btn-link p-0"
+          aria-expanded="true"
+          aria-controls="collapseOne"
+        >
+          <h5 class="mb-0">
+            Vouchers ausgeben
+          </h5>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <button class="btn btn-secondary btn-lg btn-block">
+    Eventart hinzufügen
+  </button>
+
+  <hr>
+
+  <h2>Events</h2>
+
+  <button class="btn btn-primary btn-lg btn-block" type="submit">Speichern</button>
+</main>
