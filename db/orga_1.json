@@ -1,0 +1,62 @@
+{
+   "shift_types" : [
+      {
+         "short_name" : "AufbauAust",
+         "description" : "Die Bilder aufhaengen, und so",
+         "part_max" : 10,
+         "part_min" : 7,
+         "Ort" : "MFR Goethestr. 53",
+         "type" : "Aufbau der Ausstellung",
+         "shifts" : [
+            {
+               "remarks" : [
+                  "schwer heben kann ich leider nicht, Monika"
+               ],
+               "end" : "2016-12-03T13:11+01:00",
+               "participants" : [
+                  "Andi",
+                  "Monika",
+                  "Elif"
+               ],
+               "begin" : "2016-12-03T13:11+01:00"
+            }
+         ]
+      },
+      {
+         "short_name" : "VerkauBroK",
+         "description" : "Braucht Hygienedings",
+         "Ort" : "MFR",
+         "type" : "Verkauf von Broten und Kuchen",
+         "shifts" : [
+            {
+               "begin" : "2016-12-03T13:11+01:00",
+               "end" : "2016-12-03T13:11+01:00",
+               "participants" : [
+                  "Suny",
+                  "Elif"
+               ]
+            },
+            {
+               "remarks" : [
+                  "Komme speter, Peter",
+                  "Das tu ich nie,Suny"
+               ],
+               "participants" : [
+                  "Kai",
+                  "Stefan",
+                  "Peter"
+               ],
+               "end" : "2016-12-03T13:11+01:00",
+               "begin" : "2016-12-03T13:11+01:00"
+            }
+         ],
+         "part_min" : 2
+      }
+   ],
+   "description" : "Lange Nacht der Museen im MFR",
+   "organisation" : "Lange Nacht der Museen 2016",
+   "remarks" : [
+      "Heuer mit Liveauftritt",
+      "Ist das erlaubt?"
+   ]
+}
