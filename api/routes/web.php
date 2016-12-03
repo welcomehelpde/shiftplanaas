@@ -15,5 +15,5 @@ $app->get('/', function () use ($app) {
     return $app->version();
 });
 
-$app->get('/api/events/{id}', 'EventsController@getEvent');
-$app->get('/api/events_json/{id}', 'EventsController@getEvent_json');
+$app->get('/api/events/{token_admin}', 'EventsController@getOrganization');
+$app->get('/api/events_json/{token_admin}', 'EventsController@getOrganization_json');

@@ -55,6 +55,8 @@
    ],
    "description" : "Lange Nacht der Museen im MFR",
    "organisation" : "Lange Nacht der Museen 2016",
+   "token_participants": "party",
+   "token_admin": "shifty",
    "remarks" : [
       "Heuer mit Liveauftritt",
       "Ist das erlaubt?"
