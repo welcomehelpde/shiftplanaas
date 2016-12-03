@@ -1,3 +1,10 @@
+// vendor
+require('expose?moment!moment');
+import 'angular';
+import 'angular-ui-router';
+import 'angular-ui-calendar';
+import 'fullcalendar';
+
 // index.html page to dist folder
 import '!!file-loader?name=[name].[ext]';
 
