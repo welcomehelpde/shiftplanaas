@@ -8,8 +8,8 @@ description varchar(300),
 creation_date datetime,
 update_date datetime);
 
-create table shift_type (shift_type int(30) unsigned PRIMARY KEY AUTO_INCREMENT,
-shift_id int(30) unsigned NOT NULL, 
+create table shift_type (shift_type_id int(30) unsigned PRIMARY KEY AUTO_INCREMENT,
+organization_id int(30) unsigned NOT NULL, 
 name varchar(300),
 short_name varchar(10),
 description varchar(300), 
@@ -21,6 +21,7 @@ update_date datetime);
 
 create table shift (
 shift_id int(30) unsigned PRIMARY KEY  AUTO_INCREMENT,
+organization_id int(30) unsigned NOT NULL, 
 shift_type_id int(30) unsigned NOT NULL,
 description varchar(200),
 start_time datetime,
